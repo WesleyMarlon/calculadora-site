@@ -68,45 +68,6 @@
             </div>
         </section>
 
-        <section>
-            <p>
-                Caso queira, abaixo você pode colocar os gastos extras. Ao clicar no "Total" vai ser somado tudo e mostrará o resultado.
-            </p>
-        </section>        
-
-         <section>
-            <div>
-                <table class="TabelaPadrão">
-                    <caption>Gastos Extras</caption>
-                    <thead>
-                        <tr>
-                            <th>Nome</th><th>Preço</th>
-                        </tr>
-                    </thead>
-                    <tbody id="produtos_extra">
-                        <tr>
-                            <td><input class="product" type="text" name="product" id="product_extra"></td>
-                            <td><input class="bought_product" type="number" name="bought_product" id="bought_product_extra" min="0"></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-
-        <section>
-            <div>
-                <table class="TabelaPadrão">
-                    <thead>
-                        <tr>
-                            <th><button id="adicionar_extra">Adicionar</button></th><th><button id="remover_extra">Remover</button></th>
-                            <th><button id="total_extra">Total</button> <output class="result" id="result_final_extra">R$ 0,00</output></th>
-                        </tr>
-                    </thead>
-                </table>
-            </div>
-        </section>
-
 
         <section>
             <p>Calcule o custo e o lucro por unidade do seu produto. Informe o custo total da produção, a quantidade de 
@@ -152,6 +113,46 @@
                             <td><output class="result" id="profit_unided">R$ 0,00</output></td>
                         </tr>
                     </tbody>
+                </table>
+            </div>
+        </section>
+
+
+        <section>
+            <p>
+                Caso queira, abaixo você pode colocar os gastos extras. Ao clicar no "Total" vai ser somado tudo e mostrará o resultado.
+            </p>
+        </section>        
+
+         <section>
+            <div>
+                <table class="TabelaPadrão">
+                    <caption>Gastos Extras</caption>
+                    <thead>
+                        <tr>
+                            <th>Nome</th><th>Preço</th>
+                        </tr>
+                    </thead>
+                    <tbody id="produtos_extra">
+                        <tr>
+                            <td><input class="product" type="text" name="product" id="product_extra"></td>
+                            <td><input class="bought_product" type="number" name="bought_product" id="bought_product_extra" min="0"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+
+        <section>
+            <div>
+                <table class="TabelaPadrão">
+                    <thead>
+                        <tr>
+                            <th><button id="adicionar_extra">Adicionar</button></th><th><button id="remover_extra">Remover</button></th>
+                            <th><button id="total_extra">Total</button> <output class="result" id="result_final_extra">R$ 0,00</output></th>
+                        </tr>
+                    </thead>
                 </table>
             </div>
         </section>
