@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Produtos</title>
+    <link rel="stylesheet" href="/assets/design.css">
+    <link rel="icon" href="/assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.mongeia.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.mongeia.apple.png">
+    <meta name="description" content="Calculadora de produtos/materiais.">
+</head>
+<body>
+    <header>
+        <h1>Calculadora</h1>
+
+        <nav>
+            <ul>
+                <li>
+                    <button id="btn-theme" aria-label="Alternar tema">🌙</button>
+                </li>  
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        
+        <section>
+            <p>Descubra de forma simples e rápida quanto você está gastando em cada produto utilizado. 
+                Informe o nome do produto, seu preço, a quantidade total adquirida e quanto foi utilizado. 
+                A calculadora irá calcular automaticamente o custo proporcional da quantidade utilizada.</p>
+        </section>
+
+        <section>
+            <div>
+                <table class="TabelaPadrão">
+                    <caption>Calculadora de Produtos</caption>
+                    <thead>
+                        <tr>
+                            <th>Nome do Produto</th><th>Preço</th><th>Peso (kg/uni)</th>
+                            <th>Usado (kg/uni)</th><th>Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody id="produtos">
+                        <tr>
+                            <td><input class="product" type="text" name="product" id="product"></td>
+                            <td><input class="bought_product" type="number" name="bought_product" id="bought_product" min="0"></td>
+                            <td><input class="weight_product" type="number" name="weight_product" id="weight_product" min="0"></td>
+                            <td><input class="weight_used" type="number" name="weight_used" id="weight_used" min="0"></td>
+                            <td><output class="result" id="result">R$ 0,00</output></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+        <section>
+            <div>
+                <table class="TabelaPadrão">
+                    <thead>
+                        <tr>
+                            <th><button id="adicionar">Adicionar</button></th><th><button id="remover">Remover</button></th>
+                            <th><button id="total">Total</button> <output class="result" id="result_final">R$ 0,00</output></th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <p>Descubra o custo e o lucro de cada unidade do seu produto. Informe o custo total da produção, a quantidade de 
+                unidades geradas e o preço de venda total. Nossa calculadora dividirá o custo total pela quantidade produzida e 
+                mostrará o custo de cada unidade, permitindo comparar com o preço de venda e descobrir seu lucro real.</p>
+        </section>
+        
+        <section>
+            <div>
+                <table class="TabelaPadrão">
+                    <caption>Calculadora de Lucro</caption>
+                    <thead>
+                        <tr>
+                            <th>Resultado</th>
+                            <th>Unidade</th>
+                            <th>Venda por
+                                <select id="tipo_venda">
+                                    <option value="unidade">Unidade</option>
+                                    <option value="total">Total</option>
+                                </select>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="number" name="result" id="result_final_2"></td>
+                            <td><input type="number" name="unided" id="unided" min="0"></td>
+                            <td><input type="number" name="sell" id="sell" min="0"></td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th>Custo por unidade</th>
+                            <th>Venda por unidade</th>
+                            <th>Lucro por unidade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><output class="result" id="cost_unided">R$ 0,00</output></td>
+                            <td><output class="result" id="sell_unided">R$ 0,00</output></td>
+                            <td><output class="result" id="profit_unided">R$ 0,00</output></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+
+    </main>
+
+    <footer>
+        <p>© 2026 WesleyDev</p>
+        <div class="social">
+            <a href="https://github.com/WesleyMarlon" target="_blank" rel="author noopener" aria-label="GitHub do WesleyDev">
+                <img src="/assets/ico/github.svg" alt="" width="24" height="24">
+            </a>
+            <a href="https://vercel.com/mongeia-labs" target="_blank" rel="noopener" aria-label="Projeto na Vercel">
+                <img src="/assets/ico/vercel.svg" alt="" width="24" height="24">
+            </a>
+        </div>
+    </footer>
+    <script src="/javascript/calculos.js"></script>
+    <script src="/javascript/darkmode.js"></script>
+</body>
+</html>
